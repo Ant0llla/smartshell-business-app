@@ -18,12 +18,19 @@
 .ssba .ssba-copy .ssba-note{margin-top:0}
 @media(max-width:959px){.ssba-hero{grid-template-columns:1fr}.ssba-copy{align-items:center;text-align:center}.ssba-product-logo{width:230px;align-items:center}.ssba-product-logo span{font-size:20px}.ssba .ssba-copy h1{font-size:32px;max-width:600px}.ssba-copy .ssba-actions{justify-content:center}}
 @media(max-width:767px){.ssba .ssba-copy h1{font-size:24px}.ssba-product-logo{margin-bottom:0}.ssba-copy .ssba-actions{margin-top:0}}
-/* Omit the cut-off next-section label while retaining the real bottom navigation. */
-.ssba-analytics-crop{width:100%;overflow:hidden;border-radius:var(--ss-website-prod-card-radius)}
-.ssba-analytics-body{aspect-ratio:1080/2110;overflow:hidden}
-.ssba .ssba-analytics-body img{width:100%;max-width:none;border-radius:0;height:auto}
-.ssba-analytics-nav{aspect-ratio:1080/170;overflow:hidden}
-.ssba .ssba-analytics-nav img{width:100%;height:100%;border-radius:0;object-fit:cover;object-position:bottom}
-.ssba-screen-stage .ssba-analytics-crop{width:270px;max-width:100%}
-.ssba-owner .ssba-lead+p{margin-top:32px}
-@media(max-width:767px){.ssba-screen-stage .ssba-analytics-crop{width:250px}}
+
+/* Financial screenshots retain the native interface; only confirmed data is shown. */
+.ssba-phone-front{width:72%;max-width:330px}.ssba-phone-back{width:28%;max-width:125px}
+.ssba-finance-crop{width:100%;overflow:hidden;border-radius:var(--ss-website-prod-card-radius)}
+.ssba-finance-head{aspect-ratio:1069/272;overflow:hidden}
+.ssba .ssba-finance-head img{width:100%;max-width:none;height:auto;border-radius:0}
+.ssba-finance-values{aspect-ratio:1069/600;overflow:hidden}
+.ssba .ssba-finance-values img{width:100%;height:100%;max-width:none;object-fit:cover;object-position:bottom;border-radius:0}
+.ssba-screen-stage .ssba-finance-crop{width:400px;max-width:100%}
+.ssba-owner .ssba-lead+p{margin-top:24px}
+/* Match preview integration without changing any other theme page. */
+body.ssba-page #page-header{margin-bottom:0}body.ssba-page #page-footer{margin-top:64px}
+.ssba .ssba-store-links [aria-disabled=true]{cursor:default;opacity:.65}
+.ssba .ssba-store-links [aria-disabled=true]:hover{background:var(--ss-website-prod-button-white-default-fill);color:var(--ss-website-prod-button-white-default-label)}
+.ssba-screen-stage>[role="tabpanel"]{width:400px;max-width:100%;min-width:0}
+.ssba section[id],.ssba article[id]{scroll-margin-top:144px}.ssba-strip a:hover{color:var(--ss-website-prod-action-primary)}@media(max-width:959px){.ssba section[id],.ssba article[id]{scroll-margin-top:96px}}
